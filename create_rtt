@@ -1,0 +1,2 @@
+sudo tshark -r "./pcapng/$1.pcapng" -Tfields -e frame.len -e tcp.analysis.ack_rtt > ./rtt/$1.txt
+
