@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
 	plot(new_df,"Packet Size", "Min RTT")
 	new_df['zscore'] = zscore(new_df["Min RTT"])
-	new_df = new_df[new_df["zscore"] < 1]
+	new_df = new_df[new_df["zscore"] < 3]
 	plot(new_df, "Packet Size", "Min RTT")
 
 
